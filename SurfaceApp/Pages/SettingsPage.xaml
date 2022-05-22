@@ -1,0 +1,49 @@
+﻿<Page x:Class="SurfaceApp.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:SurfaceApp"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+      xmlns:settings="using:SurfaceApp.Controls.Settings"
+      xmlns:controls="using:SurfaceApp.Controls"
+      muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+      Loaded="Page_Loaded"
+      mc:Ignorable="d">
+
+    <controls:NavigationViewWindowControl>
+        <settings:SettingsControl x:Name="NavigationViewControl"
+                                  AlwaysShowHeader="False"
+                                  IsSettingsVisible="False">
+            <settings:SettingsControl.PaneHeader>
+                <Button Margin="-36,48,4,8"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Stretch"
+                        Background="Transparent"
+                        BorderBrush="Transparent">
+                    <Grid HorizontalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name="TitleBlock"
+                                   Grid.Column="1"
+                                   HorizontalAlignment="Left"
+                                   FontWeight="Bold"
+                                   Text="Undefined" />
+                        <TextBlock x:Name="SubtitleBlock"
+                                   Grid.Row="1"
+                                   Grid.Column="1"
+                                   HorizontalAlignment="Left"
+                                   Text="Undefined" />
+                    </Grid>
+                </Button>
+            </settings:SettingsControl.PaneHeader>
+        </settings:SettingsControl>
+    </controls:NavigationViewWindowControl>
+</Page>
