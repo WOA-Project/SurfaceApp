@@ -34,12 +34,12 @@
                         <TextBlock x:Name="TitleBlock"
                                    HorizontalAlignment="Left"
                                    FontSize="20"
-                                   Text="Undefined"
+                                   Text="Surface Duo"
                                    TextWrapping="Wrap" />
                         <TextBlock x:Name="SubtitleBlock"
                                    HorizontalAlignment="Left"
                                    FontSize="14"
-                                   Text="Undefined"
+                                   Text="1930"
                                    TextWrapping="Wrap" />
                     </StackPanel>
                 </Grid>
@@ -104,10 +104,6 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
 
                             <TextBlock Grid.Row="0"
@@ -124,49 +120,9 @@
                                        Grid.Column="0"
                                        Padding="0,0,0,8"
                                        Opacity="0.75"
-                                       Text="Chip SOC version" />
-                            <TextBlock x:Name="CSV"
-                                       Grid.Row="1"
-                                       Grid.Column="1"
-                                       Padding="32,0,0,8" />
-
-                            <TextBlock Grid.Row="2"
-                                       Grid.Column="0"
-                                       Padding="0,0,0,8"
-                                       Opacity="0.75"
-                                       Text="Manufacturer Name" />
-                            <TextBlock x:Name="OEM"
-                                       Grid.Row="2"
-                                       Grid.Column="1"
-                                       Padding="32,0,0,8" />
-
-                            <TextBlock Grid.Row="3"
-                                       Grid.Column="0"
-                                       Padding="0,0,0,8"
-                                       Opacity="0.75"
                                        Text="Core Build ID" />
                             <TextBlock x:Name="Build"
-                                       Grid.Row="3"
-                                       Grid.Column="1"
-                                       Padding="32,0,0,8" />
-
-                            <TextBlock Grid.Row="4"
-                                       Grid.Column="0"
-                                       Padding="0,0,0,8"
-                                       Opacity="0.75"
-                                       Text="Product Code" />
-                            <TextBlock x:Name="PC"
-                                       Grid.Row="4"
-                                       Grid.Column="1"
-                                       Padding="32,0,0,8" />
-
-                            <TextBlock Grid.Row="5"
-                                       Grid.Column="0"
-                                       Padding="0,0,0,8"
-                                       Opacity="0.75"
-                                       Text="Hardware Revision" />
-                            <TextBlock x:Name="HR"
-                                       Grid.Row="5"
+                                       Grid.Row="1"
                                        Grid.Column="1"
                                        Padding="32,0,0,8" />
                         </Grid>
@@ -188,48 +144,15 @@
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
 
                             <TextBlock Grid.Row="0"
                                        Grid.Column="0"
                                        Padding="0,0,0,8"
                                        Opacity="0.75"
-                                       Text="Service Provider" />
-                            <TextBlock x:Name="SP"
-                                       Grid.Row="0"
-                                       Grid.Column="1"
-                                       Padding="0,0,0,8" />
-
-                            <TextBlock Grid.Row="1"
-                                       Grid.Column="0"
-                                       Padding="0,0,0,8"
-                                       Opacity="0.75"
-                                       Text="Mobile Operator" />
-                            <TextBlock x:Name="MO"
-                                       Grid.Row="1"
-                                       Grid.Column="1"
-                                       Padding="0,0,0,8" />
-
-                            <TextBlock Grid.Row="2"
-                                       Grid.Column="0"
-                                       Padding="0,0,0,8"
-                                       Opacity="0.75"
-                                       Text="IMEI-SV" />
-                            <TextBlock x:Name="IMEI"
-                                       Grid.Row="2"
-                                       Grid.Column="1"
-                                       Padding="0,0,0,8" />
-
-                            <TextBlock Grid.Row="3"
-                                       Grid.Column="0"
-                                       Padding="0,0,0,8"
-                                       Opacity="0.75"
                                        Text="Modem(s) Information" />
                             <ListView x:Name="PhoneListView"
-                                      Grid.Row="3"
+                                      Grid.Row="0"
                                       Grid.Column="1"
                                       Padding="0,0,0,8"
                                       IsItemClickEnabled="False"
@@ -245,29 +168,6 @@
                                 </ListView.ItemContainerStyle>
                             </ListView>
                         </Grid>
-                    </controls:SettingExpander>
-                </controls:SettingsGroup>
-                <controls:SettingsGroup x:Name="RegulatoryPanel"
-                                        Header="Legal Information"
-                                        Visibility="Collapsed">
-                    <controls:SettingExpander>
-                        <controls:SettingExpander.Header>
-                            <controls:Setting Description="Regulatory Information about your device" Header="Regulatory" Style="{StaticResource ExpanderHeaderSettingStyle}">
-                                <controls:Setting.Icon>
-                                    <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xEB95;" />
-                                </controls:Setting.Icon>
-                            </controls:Setting>
-                        </controls:SettingExpander.Header>
-
-                        <StackPanel Margin="56,16,16,16" Spacing="16">
-                            <TextBlock x:Name="ManufactureCountry"
-                                       Padding="0,0,0,8"
-                                       Text="MADE IN N/A" />
-                            <Image x:Name="RegulatoryImage"
-                                   MaxWidth="400"
-                                   HorizontalAlignment="Left"
-                                   Stretch="Fill" />
-                        </StackPanel>
                     </controls:SettingExpander>
                 </controls:SettingsGroup>
             </StackPanel>

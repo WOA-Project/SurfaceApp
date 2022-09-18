@@ -24,8 +24,6 @@ namespace SurfaceApp
             RetrieveData();
         }
 
-        public bool IsDarkTheme { get { return (bool)Application.Current.Resources["IsDarkTheme"]; } }
-
         private async void RetrieveData()
         {
             try
@@ -52,12 +50,6 @@ namespace SurfaceApp
             try
             {
                 reghandler = new RegistryHandler();
-                OEM.Text = reghandler.ProductCode;
-                MO.Text = reghandler.MobileOperator;
-                SP.Text = reghandler.ServiceProvider;
-                CSV.Text = reghandler.SOC;
-                TitleBlock.Text = reghandler.Manufacturer + " " + reghandler.ModelName;
-                SubtitleBlock.Text = reghandler.ProductCodeCleaned;
 
                 if (reghandler.ReleaseName != null)
                 {

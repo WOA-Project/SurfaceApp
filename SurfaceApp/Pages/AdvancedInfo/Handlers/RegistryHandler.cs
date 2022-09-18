@@ -11,15 +11,6 @@ namespace AdvancedInfo.Handlers
 
         public RegistryHandler()
         {
-            ProductCode = ReadRegistryStringFromDTI("PhoneManufacturerModelName");
-            MobileOperator = ReadRegistryStringFromDTI("PhoneMobileOperatorName");
-            ServiceProvider = ReadRegistryStringFromDTI("PhoneMobileOperatorDisplayName");
-            SOC = ReadRegistryStringFromDTI("PhoneSOCVersion");
-            Manufacturer = ReadRegistryStringFromDTI("PhoneManufacturerDisplayName");
-            if (Manufacturer == null)
-                Manufacturer = ReadRegistryStringFromDTI("PhoneManufacturer");
-            ModelName = ReadRegistryStringFromDTI("PhoneModelName");
-            ProductCodeCleaned = ReadRegistryStringFromDTI("PhoneHardwareVariant");
             ReleaseName = ReadRegistryStringFromDTI("PhoneReleaseVersion");
         }
 
@@ -40,13 +31,6 @@ namespace AdvancedInfo.Handlers
             return null;
         }
 
-        public string? ProductCode { get; internal set; }
-        public string? ProductCodeCleaned { get; internal set; }
-        public string? MobileOperator { get; internal set; }
-        public string? ServiceProvider { get; internal set; }
-        public string? SOC { get; internal set; }
-        public string? Manufacturer { get; internal set; }
-        public string? ModelName { get; internal set; }
         public string? ReleaseName { get; internal set; }
     }
 }
