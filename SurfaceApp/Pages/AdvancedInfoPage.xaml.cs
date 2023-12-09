@@ -90,7 +90,7 @@ namespace SurfaceApp
 
         private async void ReleasePanel_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://woa-project.github.io/SurfaceWOA"));
+            await Launcher.LaunchUriAsync(new Uri("https://woa-project.github.io/DuoWOA"));
         }
     }
 }

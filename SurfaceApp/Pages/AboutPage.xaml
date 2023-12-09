@@ -13,7 +13,7 @@
                                    SecondaryLinksHeader="Links">
         <controls1:SettingsPageControl.PrimaryLinks>
             <controls1:PageLink Link="https://github.com/WOA-Project/SurfaceApp" Text="Github Repository" />
-            <controls1:PageLink Link="https://woa-project.github.io/SurfaceWOA" Text="Website" />
+            <controls1:PageLink Link="https://woa-project.github.io/DuoWOA" Text="Website" />
         </controls1:SettingsPageControl.PrimaryLinks>
         <controls1:SettingsPageControl.ModuleContent>
             <StackPanel Orientation="Vertical">
